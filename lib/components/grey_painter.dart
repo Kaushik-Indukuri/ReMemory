@@ -5,7 +5,7 @@ class GreyPainter extends CustomPainter{
 
   GreyPainter() :
         bluePaint = Paint()..color = green1..style = PaintingStyle.fill,
-        bluegreyPaint = Paint()..color = Color(0xffd4d4d4)..style = PaintingStyle.fill,
+        bluegreyPaint = Paint()..color = dblue..style = PaintingStyle.fill,
         greenPaint = Paint()..color = dblue..style = PaintingStyle.fill;
 
   final bluePaint;
@@ -24,13 +24,14 @@ class GreyPainter extends CustomPainter{
     path.lineTo(size.width, 0);
     path.lineTo(0, 0);
     _addPointsToPath(path, [
-      Point(size.width*0.6, size.height*0),
-      Point(size.width*0.55, size.height*0),
-      Point(size.width*0.54, size.height*0.115),
-      Point(size.width*0.85, size.height*0.17),
-      Point(size.width*0.95, size.height*0.19),
-      Point(size.width, size.height*0.24),
-      Point(size.width, size.height*0.24),
+      Point(size.width*0.4, size.height*0),
+      Point(size.width*0.4, size.height*0),
+      Point(size.width*0.65, size.height*0.25),
+      Point(size.width*0.45, size.height*0.55),
+      Point(size.width*0.47, size.height*0.675),
+      Point(size.width*0.55, size.height*0.75),
+      Point(size.width*0.8, size.height),
+      Point(size.width, size.height),
 
     ]);
 
