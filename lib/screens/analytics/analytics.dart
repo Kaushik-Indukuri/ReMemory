@@ -74,31 +74,106 @@ class _AnalyticsState extends State<Analytics> {
             ),
           ),
           Positioned(
-            top: size.height*0.525,
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 22),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("REVIEW", style: TextStyle(
+            top: size.height*0.54,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 22),
+                  child: Text("REVIEW", style: TextStyle(
                     color: titleText,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),),
-                  CircularPercentIndicator(
-                    radius: 150.0,
-                    lineWidth: 12.0,
-                    animation: true,
-                    backgroundColor: Colors.white,
-                    percent: 0.7,
-                    center: Text(
-                      "Hi YouTube!",
-                    ),
-                    progressColor: Colors.green,
-                    circularStrokeCap: CircularStrokeCap.round,
+                ),
+                SizedBox(height:25,),
+                Container(
+                  width: size.width,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        children: [
+                          CircularPercentIndicator(
+                            radius: 100.0,
+                            lineWidth: 12.0,
+                            animation: true,
+                            backgroundColor: Colors.grey[300],
+                            percent: 0.8,
+                            center: Text("Face", style: TextStyle(
+                              color: titleText,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),),
+                            progressColor: Color(0xffff7676),
+                            circularStrokeCap: CircularStrokeCap.round,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 15),
+                            child: Text("4/5", style: TextStyle(
+                              color: titleText,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w600,
+                            ),),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          CircularPercentIndicator(
+                            radius: 100.0,
+                            lineWidth: 12.0,
+                            animation: true,
+                            backgroundColor: Colors.grey[300],
+                            percent: 0.33,
+                            center: Text("Memories", style: TextStyle(
+                              color: titleText,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),),
+                            progressColor: Colors.lightBlueAccent,
+                            circularStrokeCap: CircularStrokeCap.round,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 15),
+                            child: Text("1/3", style: TextStyle(
+                              color: titleText,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w600,
+                            ),),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          CircularPercentIndicator(
+                            radius: 100.0,
+                            lineWidth: 12.0,
+                            animation: true,
+                            backgroundColor: Colors.grey[300],
+                            percent: 0.7,
+                            center: Text("Relation", style: TextStyle(
+                              color: titleText,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),),
+                            progressColor: green1,
+                            circularStrokeCap: CircularStrokeCap.round,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 15),
+                            child: Text("5/7", style: TextStyle(
+                              color: titleText,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w600,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],
