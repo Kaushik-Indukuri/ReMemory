@@ -27,7 +27,7 @@ class _ReviewQuizState extends State<ReviewQuiz> {
 
   Widget qtOption (String title, int index){
     return Container(
-      margin: EdgeInsets.only(top: kDefaultPadding),
+      margin: EdgeInsets.only(top: 20),
       padding: EdgeInsets.all(kDefaultPadding),
       decoration: BoxDecoration(
         border: Border.all(color: getTheRightColor(index)),
@@ -59,6 +59,40 @@ class _ReviewQuizState extends State<ReviewQuiz> {
     );
   }
 
+
+  Widget qtCard(String question, String op1, String op2, String op3, String op4,
+      int ind1, int ind2, int ind3, int ind4) {
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: kDefaultPadding, vertical: 10),
+      padding: EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding,
+          top: kDefaultPadding, bottom: 30),
+      decoration: BoxDecoration(
+        boxShadow: [BoxShadow(
+          color: Colors.grey,
+          blurRadius: 10,
+          offset: Offset(0,1),
+        ),],
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(25),
+      ),
+      child: Column(
+        children: [
+          Text(question,
+            style: Theme.of(context)
+                .textTheme
+                .headline6
+                .copyWith(color: kBlackColor),
+          ),
+          SizedBox(height: kDefaultPadding / 2),
+          qtOption(op1, ind1),
+          qtOption(op2, ind2),
+          qtOption(op3, ind3),
+          qtOption(op4, ind4),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -82,6 +116,11 @@ class _ReviewQuizState extends State<ReviewQuiz> {
       body: Container(
         child: Column(
           children: [
+            qtCard("Who is your high school friend?", "Jungkook Jeon",
+                "Nitin Indukuri", "Jin Kim", "Bill Gates", 0, 3, 1, 3),
+            qtCard("Who did you have a this memory with: Going to concert?",
+                "Yoon-gi Min", "Bill Gates", "Jin Kim", "Bill Gates",
+                0, 3, 1, 3)
 
           ],
         ),

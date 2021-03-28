@@ -73,7 +73,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
               ),
               Spacer(),
               Text(
-                "${_qnController.correctAns}/${_qnController.questions.length}",
+                "2/${_qnController.questions.length}",
                 style: Theme.of(context)
                     .textTheme
                     .headline4
