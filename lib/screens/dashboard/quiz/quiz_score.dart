@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rememory/components/colors.dart';
 import 'package:rememory/services/helperfunctions.dart';
-import 'package:websafe_svg/websafe_svg.dart';
 import '../../home.dart';
 import 'models/question_controller.dart';
 
@@ -47,7 +46,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                   onPressed: (){
                     ref.add({
                       'user': _username,
-                      'quiz name': "Quiz 1",
+                      'quiz name': "Quiz 3",
                       'score': "2/5",
                       'int': 2,
                       'date': "3. 27. 2021",
@@ -74,7 +73,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
               ),
               Spacer(),
               Text(
-                "${_qnController.correctAns * 10}/${_qnController.questions.length * 10}",
+                "${_qnController.correctAns}/${_qnController.questions.length}",
                 style: Theme.of(context)
                     .textTheme
                     .headline4
