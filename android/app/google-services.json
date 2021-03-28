@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1017362338118",
+    "project_id": "rememory-6cf52",
+    "storage_bucket": "rememory-6cf52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017362338118:android:c3d89af77a306f8d5f9547",
+        "android_client_info": {
+          "package_name": "com.kaushikindukuri.rememory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017362338118-obqjga4bqlj8qdqhu8ts20luqhj0k9se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACyedx0WdiiMUMLr1Dh_4u8gdlWUBDyhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017362338118-obqjga4bqlj8qdqhu8ts20luqhj0k9se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

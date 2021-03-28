@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>205896748066-e0q4mnol49p00mvj0qkt4k8inlgouet0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.205896748066-e0q4mnol49p00mvj0qkt4k8inlgouet0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCTUDh55eUKdNCCPRptzlj_uKqvT6Ae-Ew</string>
+	<key>GCM_SENDER_ID</key>
+	<string>205896748066</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kaushikindukuri.dementiahack</string>
+	<key>PROJECT_ID</key>
+	<string>rememory-ca74d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rememory-ca74d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:205896748066:ios:40296fa2887789dda3ce7b</string>
+</dict>
+</plist>
