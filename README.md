@@ -1,6 +1,9 @@
 # rememory
 
-A new Flutter application.
+Credits to abuanwar072 for the quiz controller logic we implemented
+First commit is merging all the features our individual members worked on 
+Rest of the commits were resolving bugs, fixing ui, and ensuring all the features worked together
+
 
 ## Getting Started
 
