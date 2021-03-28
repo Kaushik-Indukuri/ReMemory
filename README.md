@@ -1,4 +1,4 @@
-# rememory
+# ReMemory
 
 Credits to abuanwar072 for the quiz controller logic we implemented
 
