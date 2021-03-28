@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.grey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home(0),
+      home: Welcome(),
     );
   }
 }

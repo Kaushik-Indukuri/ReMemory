@@ -49,7 +49,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                       'quiz name': "Quiz 3",
                       'score': "2/5",
                       'int': 2,
-                      'date': "3. 27. 2021",
+                      'date': "3/28/2021",
                     }).whenComplete(() => Navigator.pushAndRemoveUntil(
                       context,
                       MaterialPageRoute(builder: (context) => Home(0)),

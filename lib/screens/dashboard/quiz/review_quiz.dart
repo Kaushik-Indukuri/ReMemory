@@ -114,15 +114,32 @@ class _ReviewQuizState extends State<ReviewQuiz> {
         ),
       ),
       body: Container(
-        child: Column(
-          children: [
-            qtCard("Who is your high school friend?", "Jungkook Jeon",
-                "Nitin Indukuri", "Jin Kim", "Bill Gates", 0, 3, 1, 3),
-            qtCard("Who did you have a this memory with: Going to concert?",
-                "Yoon-gi Min", "Bill Gates", "Jin Kim", "Bill Gates",
-                0, 3, 1, 3)
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              qtCard("Who is your high school friend?", "Jungkook Jeon",
+                  "Nitin Indukuri", "Jin Kim", "Bill Gates", 0, 3, 1, 3),
+              SizedBox(height: 10,),
+              qtCard("Who did you have a this memory with: Going to concert?",
+                  "Yoon-gi Min", "Bill Gates", "Jin Kim", "Jungkook Jeon",
+                  1, 3, 0, 3),
+              SizedBox(height: 10,),
+              qtCard("What is your relation with Nitin Indukuri?",
+                  "College Friend", "Mentor", "Cousin", "Older Brother",
+                  1, 3, 3, 0),
+              SizedBox(height: 10,),
+              qtCard("Who is your cousin?",
+                  "Yoon-gi Min", "Bill Gates", "Jin Kim", "Nitin Indukuri",
+                  0, 3, 3, 3),
+              SizedBox(height: 10,),
+              qtCard("What are your memories with Bill Gates?",
+                  "Going to concert", "Microsoft", "Karaoke", "Rooming",
+                  3, 0, 3, 3),
+              SizedBox(height: 50,),
 
-          ],
+            ],
+          ),
         ),
       ),
     );
