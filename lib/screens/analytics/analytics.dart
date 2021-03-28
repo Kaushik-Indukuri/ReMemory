@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:rememory/components/colors.dart';
 import 'package:rememory/components/grey_painter.dart';
 
@@ -84,6 +85,18 @@ class _AnalyticsState extends State<Analytics> {
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),),
+                  CircularPercentIndicator(
+                    radius: 150.0,
+                    lineWidth: 12.0,
+                    animation: true,
+                    backgroundColor: Colors.white,
+                    percent: 0.7,
+                    center: Text(
+                      "Hi YouTube!",
+                    ),
+                    progressColor: Colors.green,
+                    circularStrokeCap: CircularStrokeCap.round,
+                  ),
                 ],
               ),
             ),
