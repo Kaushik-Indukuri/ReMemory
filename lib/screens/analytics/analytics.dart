@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:rememory/components/colors.dart';
 import 'package:rememory/components/grey_painter.dart';
 
+import 'graph_funct.dart';
+
 class Analytics extends StatefulWidget {
   @override
   _AnalyticsState createState() => _AnalyticsState();
@@ -40,6 +42,46 @@ class _AnalyticsState extends State<Analytics> {
                     fontFamily: "OpenSansBold",
                     fontSize: 31,
                     color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),),
+                ],
+              ),
+            ),
+          ),
+          Positioned(
+            top: size.height*0.185,
+            left: 20,
+            child: Align(
+              alignment: Alignment.center,
+              child: Container(
+                padding: EdgeInsets.only(bottom: 7),
+                height: 225,
+                width: size.width-40,
+                decoration: BoxDecoration(
+                  color: Color(0xff002047),
+                  borderRadius: BorderRadius.circular(17),
+                  boxShadow: [
+                    BoxShadow(
+                        color: titleText,
+                        offset: Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0),
+                  ],
+                ),
+                child: GraphFunction(),
+              ),
+            ),
+          ),
+          Positioned(
+            top: size.height*0.525,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 22),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("REVIEW", style: TextStyle(
+                    color: titleText,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),),
                 ],
