@@ -1,6 +1,6 @@
 # ReMemory
 
-Credits to abuanwar072 for the quiz controller logic we implemented
+Credits to Sanskar Tiwari(theindianappguy) for the quiz controller logic we implemented
 
 First commit is merging all the features our individual members worked on 
 
