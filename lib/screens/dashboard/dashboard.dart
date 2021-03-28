@@ -4,6 +4,7 @@ import 'package:rememory/components/LoadingAnimation.dart';
 import 'package:rememory/components/colors.dart';
 import 'package:rememory/onboarding/signin.dart';
 import 'package:rememory/screens/dashboard/quiz/quiz_screen.dart';
+import 'package:rememory/screens/dashboard/quiz/review_quiz.dart';
 import 'package:rememory/services/auth.dart';
 import 'package:rememory/services/database.dart';
 import 'package:flutter/material.dart';
@@ -61,64 +62,69 @@ class _DashboardState extends State<Dashboard> {
   Widget QuizTile({String title, String scoretitle, int score, String date, BuildContext context}){
     Size size = MediaQuery.of(context).size;
 
-    return Container(
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 22),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(title, style: TextStyle(
-                      color: titleText,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    Text(date, style: TextStyle(
-                      color: secondaryText,
-                      fontSize: 17,
-                      fontWeight: FontWeight.w500,
-                    ),),
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text(scoretitle, style: TextStyle(
-                      color: titleText,
-                      fontSize: 17,
-                      fontWeight: FontWeight.w600,
-                    ),),
-                    SizedBox(height: 5,),
-                    StepProgressIndicator(
-                      fallbackLength: 150,
-                      totalSteps: 5,
-                      currentStep: score,
-                      size: 8,
-                      padding: 0,
-                      roundedEdges: Radius.circular(10),
-                      selectedColor: dblue,
-                      unselectedColor: Colors.grey[300],
-                    ),
-                  ],
-                ),
-              ],
+    return GestureDetector(
+      onTap: (){
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ReviewQuiz()));
+      },
+      child: Container(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 22),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(title, style: TextStyle(
+                        color: titleText,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),),
+                      Text(date, style: TextStyle(
+                        color: secondaryText,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(scoretitle, style: TextStyle(
+                        color: titleText,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                      ),),
+                      SizedBox(height: 5,),
+                      StepProgressIndicator(
+                        fallbackLength: 150,
+                        totalSteps: 5,
+                        currentStep: score,
+                        size: 8,
+                        padding: 0,
+                        roundedEdges: Radius.circular(10),
+                        selectedColor: dblue,
+                        unselectedColor: Colors.grey[300],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
-          SizedBox(height: 12,),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Container(
-              margin: EdgeInsets.only(bottom: 15),
-              height: 1,
-              color: secondaryText,
-              width: size.width*0.94,
+            SizedBox(height: 12,),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Container(
+                margin: EdgeInsets.only(bottom: 15),
+                height: 1,
+                color: secondaryText,
+                width: size.width*0.94,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
